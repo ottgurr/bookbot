@@ -22,8 +22,6 @@ def sort_list(num_characters):
     List = []
     for key in num_characters:
         num = num_characters[key]
-        List_enetry = {"char": key, "num": num}
-        List.append(List_enetry)
-
+        List.append({"char": key, "num": num})
     List.sort(reverse=True, key=sort_on)
     return List
